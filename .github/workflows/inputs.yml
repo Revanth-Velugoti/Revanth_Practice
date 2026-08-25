@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display Input
-      run: echo "Username is ${{github.event.inputs.username}}"
+        run: echo "Username is ${{github.event.inputs.username}}"
