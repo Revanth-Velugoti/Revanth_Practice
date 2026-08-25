@@ -1,0 +1,15 @@
+name: Input Demo
+
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: "Enter Username"
+        required: true
+        default: "Revanth"
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Input
+      run: echo "Username is ${{github.event.inputs.username}}"
