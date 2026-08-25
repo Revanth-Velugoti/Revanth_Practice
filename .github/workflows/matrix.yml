@@ -1,0 +1,13 @@
+name: Matrix demo
+on:
+  workflow_dispatch:
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        list: [Revanth, Dhileep]
+
+    steps:
+      - run: echo "Hello ${{matrix.list}}"
