@@ -9,4 +9,4 @@ jobs:
 
     steps:
       - name: Print Message
-        run: echo "Hello Revanth! Workflow triggered manually."
+        run: echo "Hello! Workflow triggered manually."
