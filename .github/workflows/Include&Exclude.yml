@@ -18,4 +18,4 @@ jobs:
           - role: qa
 
     steps:
-      - run: echo "Running in ${{ matrix.role}}"
+      - run: echo "Role is ${{ matrix.role}}"
