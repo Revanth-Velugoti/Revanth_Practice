@@ -1,0 +1,21 @@
+name: Include Exclude example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        role: [dev, qa]
+
+        include:
+          - role: prod
+
+        exclude:
+          - role: qa
+
+    steps:
+      - run: echo "Running in ${{ matrix.role}}"
