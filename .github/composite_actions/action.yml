@@ -1,0 +1,9 @@
+name: Hello Action
+description: Composite action example
+runs:
+  using: composite
+
+  steps:
+    - name: Print Message
+      shell: bash
+      run: echo "Hello Revanth"
