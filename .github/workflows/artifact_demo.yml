@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
- build:
+  create:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,9 +17,9 @@ jobs:
           name: my-artifact
           path: message.txt
 
-  test:
+  read:
     runs-on: ubuntu-latest
-    needs: build
+    needs: create
 
     steps:
       - name: Download Artifact
@@ -28,4 +28,4 @@ jobs:
           name: my-artifact
 
       - name: Display File
-        run: type message.txt
+        run: cat message.txt
