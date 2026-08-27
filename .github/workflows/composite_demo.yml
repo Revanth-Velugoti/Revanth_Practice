@@ -1,0 +1,11 @@
+name: Composite Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: ./.github/composite_actions
