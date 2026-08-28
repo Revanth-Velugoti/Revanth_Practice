@@ -5,6 +5,7 @@ on:
     
 jobs:
   hello:
+    name: demo
     runs-on: ubuntu-latest
 
     steps:
