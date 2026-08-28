@@ -1,4 +1,4 @@
-name: Composite Demo
+name: Composite Action Demo
 
 on:
   workflow_dispatch:
@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/composite_actions
+      - name: Run Composite Action
+        uses: Revanth-Velugoti/composite_actions_repo@main
